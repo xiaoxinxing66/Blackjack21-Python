@@ -19,6 +19,7 @@ def update_banker_cards():
     banker_cards_var.set(f"庄家的牌为 X  {banker_cards[1]}")
 
 def display_result(message):
+    banker_cards_var.set(f"庄家的牌为 {banker_cards}, 总点数为 {sum(banker_cards)}")
     messagebox.showinfo("游戏结果", message)
     window.destroy()
 
