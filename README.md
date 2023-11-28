@@ -3,6 +3,12 @@
 该项目涵盖了洗牌、发牌、计分、庄家决策等方面，是一个学习Python编程和游戏开发的有趣实践项目。
 开始挑战吧，看看你能否在这个简单的黑杰克游戏中战胜庄家！
 
+![21247ee04d4606826b90d4c496d7f92](https://github.com/xiaoxinxing66/Blackjack21-Python/assets/93857716/0f9bec5e-62f4-4c41-aa00-c6564f071d60)
+
+
+![a6b9ea868f4077270bbadc2a7a92a9e](https://github.com/xiaoxinxing66/Blackjack21-Python/assets/93857716/5266a58c-2d04-4d58-8b65-6c3b2a112914)
+
+
 # 快速开始
 - git clone https://github.com/xiaoxinxing66/Blackjack21-Python.git
 - pip install Pillow
