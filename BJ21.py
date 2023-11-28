@@ -1,6 +1,7 @@
 import random
 import tkinter as tk
 from tkinter import messagebox
+from PIL import Image, ImageTk
 
 def update_player_cards():
     player_cards_var.set(f"玩家的牌为 {p_cards}, 总点数为 {sum(p_cards)}")
@@ -63,9 +64,20 @@ def stand():
 deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11] * 4
 random.shuffle(deck)
 
-# 创建GUI窗口
+# 设计GUI窗口
 window = tk.Tk()
-window.title("黑杰克 - 赌场")
+
+# 设置窗口的初始大小为800x600像素
+window.geometry("800x600")
+
+# 打开图像并将其转换为Tkinter PhotoImage对象
+image = Image.open("VCG211132459410.jpg")
+photo = ImageTk.PhotoImage(image)
+
+# 创建标签，使用PhotoImage作为背景
+background_label = tk.Label(window, image=photo)
+background_label.place(relwidth=1, relheight=1)
+window.title("21点 - 赌场")
 
 # 初始化庄家和玩家的牌
 d_cards = []
@@ -101,5 +113,10 @@ while len(p_cards) != 2:
 update_dealer_cards()
 update_player_cards()
 
+
+
+
+
 # 运行GUI
+
 window.mainloop()
