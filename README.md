@@ -4,7 +4,7 @@
 开始挑战吧，看看你能否在这个简单的黑杰克游戏中战胜庄家！
 
 # 快速开始
-
+- git clone https://github.com/xiaoxinxing66/Blackjack21-Python.git
 - pip install Pillow
 - python BJ21.py
 
